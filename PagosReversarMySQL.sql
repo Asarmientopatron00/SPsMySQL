@@ -158,6 +158,15 @@ SP: BEGIN
 				P_USUARIOID,
 				P_USUARIO
 			);
+
+			-- RECALCULAR MORA
+			CALL SP_CalcularValorInteresMora(
+				P_NUMEROPROYECTO, 
+				1, 
+				'CalculoValorInteresMora', 
+				P_USUARIOID,
+				P_USUARIO
+			);
 		END;
 	END IF;
 
