@@ -307,6 +307,7 @@ SP: BEGIN
 			-- RECALCULAR MORA
 			CALL SP_CalcularValorInteresMora(
 				P_NUMEROPROYECTO, 
+				SYSDATE(), 
 				1, 
 				'CalculoValorInteresMora', 
 				P_USUARIOID,
