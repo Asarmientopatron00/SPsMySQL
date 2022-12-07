@@ -305,14 +305,14 @@ SP: BEGIN
 			);
 
 			-- RECALCULAR MORA
-			-- CALL SP_CalcularValorInteresMora(
-			-- 	P_NUMEROPROYECTO, 
-			-- 	SYSDATE(), 
-			-- 	1, 
-			-- 	'CalculoValorInteresMora', 
-			-- 	P_USUARIOID,
-			-- 	P_USUARIO
-			-- );
+			CALL SP_CalcularValorInteresMora(
+				P_NUMEROPROYECTO, 
+				P_FECHAPAGO, 
+				1, 
+				'CalculoValorInteresMora', 
+				P_USUARIOID,
+				P_USUARIO
+			);
 		END;
 	END IF;
 
